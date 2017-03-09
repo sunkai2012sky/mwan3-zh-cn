@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016-2017 Github <openwrt-language>
+# Copyright (C) 2016-2017 GitHub <mwan3-zh-cn>
 #
 # This is free software, licensed under the GNU General Public License v3.
 # See /LICENSE for more information.
