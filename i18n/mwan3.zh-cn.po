@@ -1,0 +1,376 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-09 03:31+0200\n"
+"PO-Revision-Date: 2017-03-09 03:31+0200\n"
+"Last-Translator: sunkai2012sky <sunkai2012sky@gmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.6\n"
+
+msgid "Load Balancing"
+msgstr "负载均衡"
+
+msgid ""
+"This section allows you to modify the contents of /etc/hotplug.d/iface/16-mwa"
+"ncustom<br />This is useful for running system commands and/or scripts based "
+"on interface ifup or ifdown hotplug events<br /><br />"
+"Notes:<br />"
+"The first line of the script must be &#34;#!/bin/sh&#34; without quotes<br />"
+"Lines beginning with # are comments and are not executed<br /><br />"
+"Available variables:<br />"
+"$ACTION is the hotplug event (ifup, ifdown)<br />"
+"$INTERFACE is the interface name (wan1, wan2, etc.)<br />"
+"$DEVICE is the device name attached to the interface (eth0.1, eth1, etc.)")
+msgstr ""
+"此部分允许您修改 /etc/hotplug.d/iface/16-mwancustom 的内容<br />"
+"这对于基于接口ifup或ifdown的热插拔事件运行系统命令或脚本很有用<br /><br />"
+"注意：<br />脚本的第一行必须是没有引号的&#34;#!/bin/sh&#34;，以#开头的行是注释"
+"不会执行<br /><br />可用变量：<br />"
+"$ACTION 是热插拔事件（ifup，ifdown）<br />"
+"$INTERFACE 是接口名称（wan1，wan2等）<br />"
+"$DEVICE 是附加到接口的设备名称（eth0.1，eth1等）"
+
+msgid "Restore default hotplug script"
+msgstr "恢复默认的热插拔脚本"
+
+msgid "Restore..."
+msgstr "恢复..."
+
+msgid "This section allows you to modify the contents of /etc/config/mwan3"
+msgstr "此部分允许您修改 /etc/config/mwan3 的内容"
+
+msgid "This section allows you to modify the contents of /etc/config/network"
+msgstr "此部分允许您修改 /etc/config/network 的内容"
+
+msgid "MWAN Interface Configuration"
+msgstr "MWAN接口配置"
+
+msgid "Interfaces"
+msgstr "接口"
+
+msgid ""
+"MWAN supports up to 250 physical and/or logical interfaces<br />"
+"MWAN requires that all interfaces have a unique metric configured in /etc/con"
+"fig/network<br />Names must match the interface name found in /etc/config/net"
+"work (see advanced tab)<br />"
+"Names may contain characters A-Z, a-z, 0-9, _ and no spaces<br />"
+"Interfaces may not share the same name as configured members, "
+"policies or rules"
+msgstr ""
+"MWAN最多支持250个物理或逻辑接口<br />"
+"MWAN要求所有接口都具有在 /etc/config/network 中配置的唯一度量标准<br />"
+"名称必须与 /etc/config/network 中的接口名称匹配（请参阅高级选项卡）<br />"
+"名称可以包含字符A-Z，a-z，0-9，_且无空格<br />"
+"接口不能与配置的成员，策略或规则共享相同的名称"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "Tracking IP"
+msgstr "跟踪IP"
+
+msgid "Tracking reliability"
+msgstr "跟踪可靠性"
+
+msgid "Ping count"
+msgstr "Ping数"
+
+msgid "Ping timeout"
+msgstr "Ping超时"
+
+msgid "Ping interval"
+msgstr "Ping间隔"
+
+msgid "Interface down"
+msgstr "接口关闭"
+
+msgid "Interface up"
+msgstr "接口打开"
+
+msgid "Metric"
+msgstr "跃点"
+
+msgid "Errors"
+msgstr "错误"
+
+msgid "MWAN Interface Configuration - "
+msgstr "MWAN接口配置 - "
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid ""
+"This IP address will be pinged to dermine if the link is up or down. Leave bl"
+"ank to assume interface is always online"
+msgstr ""
+"此IP地址将被ping通以确定链路是开启还是关闭，留为空白则假定接口始终在线"
+
+msgid ""
+"Acceptable values: 1-100. This many Tracking IP addresses must respond for th"
+"e link to be deemed up"
+msgstr ""
+"可接受的值：1-100。这么多跟踪IP地址必须被认为是响应链路"
+
+msgid "Interface will be deemed down after this many failed ping tests"
+msgstr "在这个ping的测试失败之后，接口将被认为是关闭"
+
+msgid ""
+"Downed interface will be deemed up after this many successful ping tests"
+msgstr ""
+"在许多的ping测试成功之后，关闭的接口将被认为打开"
+
+msgid ""
+"This displays the metric assigned to this interface in /etc/config/network"
+msgstr ""
+"这将在 /etc/config/network 中显示分配给此接口的跃点数"
+
+msgid "MWAN Member Configuration"
+msgstr "MWAN成员配置"
+
+msgid "Members"
+msgstr "成员"
+
+msgid ""
+"Members are profiles attaching a metric and weight to an MWAN interface<br />"
+"Names may contain characters A-Z, a-z, 0-9, _ and no spaces<br />"
+"Members may not share the same name as configured interfaces"
+", policies or rules"
+msgstr ""
+"成员是将跃点数和权重附加到MWAN接口的配置文件<br />"
+"名称可以包含字符A-Z，a-z，0-9，_且无空格<br />"
+"成员不能与配置的接口，策略或规则共享相同的名称"
+
+msgid "Weight"
+msgstr "权重"
+
+msgid "MWAN Member Configuration - "
+msgstr "MWAN成员配置 - "
+
+msgid "Acceptable values: 1-1000. Defaults to 1 if not set"
+msgstr "可接受的值：1-1000。如果未设置，则默认为1"
+
+msgid "Currently Configured Interfaces"
+msgstr "当前配置的接口"
+
+msgid "MWAN Policy Configuration"
+msgstr "MWAN策略配置"
+
+msgid "Policies"
+msgstr "策略"
+
+msgid ""
+"Policies are profiles grouping one or more members controlling how MWAN distr"
+"ibutes traffic<br />"
+"Member interfaces with lower metrics are used first. Interfaces with the same"
+" metric load-balance<br />"
+"Load-balanced member interfaces distribute more traffic out those with higher"
+" weights<br />"
+"Names may contain characters A-Z, a-z, 0-9, _ and no spaces. Names must be 15"
+" characters or less<br />"
+"Policies may not share the same name as configured interfaces, "
+"members or rules"
+msgstr ""
+"策略是对控制MWAN如何分配流量的一个或多个成员进行分组的配置文件<br />"
+"首先使用具有较低度量的成员接口，具有相同度量的接口则负载平衡<br />"
+"负载均衡将更多的流量分配给具有更高权重的成员接口<br />"
+"名称可以包含字符A-Z，a-z，0-9，_且无空格，名称必须为15个或以下的字符<br />"
+"策略不能与配置的接口，成员或规则共享相同的名称"
+
+msgid "Members assigned"
+msgstr "成员分配"
+
+msgid "Last resort"
+msgstr "最后采用"
+
+msgid "MWAN Policy Configuration - "
+msgstr "MWAN策略配置 - "
+
+msgid "Member used"
+msgstr "成员启用"
+
+msgid ""
+"When all policy members are offline use this behavior for matched traffic"
+msgstr ""
+"当所有策略成员脱机时，对匹配的流量使用此行为"
+
+msgid "unreachable (reject)"
+msgstr "无法访问（拒绝）"
+
+msgid "blackhole (drop)"
+msgstr "黑洞（drop）"
+
+msgid "default (use main routing table)"
+msgstr "默认（使用主路由表）"
+
+msgid "Currently Configured Members"
+msgstr "当前配置的成员"
+
+msgid "MWAN Rule Configuration"
+msgstr "MWAN规则配置"
+
+msgid "Traffic Rules"
+msgstr "流通规则"
+
+msgid ""
+"Rules specify which traffic will use a particular MWAN policy based on IP add"
+"ress, port or protocol<br />"
+"Rules are matched from top to bottom. Rules below a matching rule are ignored"
+". Traffic not matching any rule is routed using the main routing table<br />"
+"Traffic destined for known (other than default) networks is handled by the ma"
+"in routing table. Traffic matching a rule, but all WAN interfaces for that po"
+"licy are down will be blackholed<br />"
+"Names may contain characters A-Z, a-z, 0-9, _ and no spaces<br />"
+"Rules may not share the same name as configured interfaces, members or policies"
+msgstr ""
+"规则指定哪些流量将使用基于IP地址，端口或协议的特定MWAN策略<br />"
+"规则从上到下进行匹配，忽略匹配规则以下的规则。"
+"不匹配任何规则的流量将使用主路由表进行路由<br />"
+"去往已知（除默认网络之外）网络的流量由主路由表处理。"
+"匹配规则的流量，但该策略的所有WAN接口都关闭，将被黑名单<br />"
+"名称可以包含字符A-Z，a-z，0-9，_且无空格<br />"
+"规则不能与配置的接口，成员或策略共享相同的名称"
+
+msgid "Source address"
+msgstr "源地址"
+
+msgid "Source port"
+msgstr "源端口"
+
+msgid "Destination address"
+msgstr "目的地址"
+
+msgid "Destination port"
+msgstr "目的端口"
+
+msgid "Protocol"
+msgstr "协议"
+
+msgid "Sticky"
+msgstr "置顶"
+
+msgid "Sticky timeout"
+msgstr "置顶超时"
+
+msgid "IPset"
+msgstr ""
+
+msgid "Policy assigned"
+msgstr "已分配策略"
+
+msgid "MWAN Rule Configuration - "
+msgstr "MWAN规则配置 - "
+
+msgid "Supports CIDR notation (eg \"192.168.100.0/24\") without quotes"
+msgstr "支持不带引号的CIDR表示法（例如\“192.168.100.0/24\”）"
+
+msgid ""
+"May be entered as a single or multiple port(s) (eg \"22\" or \"80,443\") or a"
+"s a portrange (eg \"1024:2048\") without quotes"
+msgstr ""
+"可以作为单个或多个端口（例如\“22\”或\“80,443\”）"
+"或作为不带引号的端口范围（例如\“1024:2048\”）输入"
+
+msgid "View the contents of /etc/protocols for protocol descriptions"
+msgstr "查看 /etc/protocols 协议描述的内容"
+
+msgid ""
+"Traffic from the same source IP address that previously matched this rule wit"
+"hin the sticky timeout period will use the same WAN interface"
+msgstr ""
+"来自之前匹配此规则的相同源IP地址的流量在粘性超时期间将使用相同的WAN接口"
+
+msgid "Seconds. Acceptable values: 1-1000000. Defaults to 600 if not set"
+msgstr "单位秒。可接受的值：1-1000000。如果未设置，则默认为600"
+
+msgid ""
+"Name of IPset rule. Requires IPset rule in /etc/dnsmasq.conf "
+"(eg \"ipset=/youtube.com/youtube\")"
+msgstr ""
+"IPset规则的名称，需要 /etc/dnsmasq.conf 中的IPset规则"
+"（例如\“ipset=/youtube.com/youtube\”）"
+
+msgid "Currently Configured Policies"
+msgstr "当前配置的策略"
+
+#New
+
+msgid "Advanced"
+msgstr "高级"
+
+msgid "Hotplug Script"
+msgstr "热插拔脚本"
+
+msgid "MWAN Config"
+msgstr "MWAN配置"
+
+msgid "Network Config"
+msgstr "网络配置"
+
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+msgid "Troubleshooting Data"
+msgstr "故障排除数据"
+
+msgid "MWAN Interface Diagnostics"
+msgstr "MWAN接口诊断"
+
+msgid "Ping default gateway"
+msgstr "Ping默认网关"
+
+msgid "Ping tracking IP"
+msgstr "Ping跟踪IP"
+
+msgid "Check IP rules"
+msgstr "检查IP规则"
+
+msgid "Check routing table"
+msgstr "检查路由表"
+
+msgid "Hotplug ifup"
+msgstr "热插拔ifup"
+
+msgid "Hotplug ifdown"
+msgstr "热插拔ifdown"
+
+msgid "MWAN Service Control"
+msgstr "MWAN服务控制"
+
+msgid "Restart MWAN"
+msgstr "重启MWAN"
+
+msgid "Stop MWAN"
+msgstr "停止MWAN"
+
+msgid "Start MWAN"
+msgstr "启动MWAN"
+
+msgid "Diagnostic Results"
+msgstr "诊断结果"
+
+msgid "Rules"
+msgstr "规则"
+
+msgid "Interface Status"
+msgstr "接口状态"
+
+msgid "MWAN Interface Live Status"
+msgstr "MWAN接口实时状态"
+
+msgid "MWAN Interface Systemlog"
+msgstr "WAN接口系统日志"
+
+msgid "Detailed Status"
+msgstr "详细状态"
+
+msgid "MWAN Detailed Status"
+msgstr "MWAN详细状态"
