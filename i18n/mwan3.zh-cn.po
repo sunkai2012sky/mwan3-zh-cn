@@ -29,10 +29,10 @@ msgid ""
 "$DEVICE is the device name attached to the interface (eth0.1, eth1, etc.)")
 msgstr ""
 "此部分将允许您修改 /etc/hotplug.d/iface/16-mwancustom 的内容<br />"
-"这对于基于接口ifup或ifdown的热插拔事件运行系统命令或脚本很有用<br /><br />"
+"这对于基于接口启用或禁用的热插拔事件运行系统命令或脚本很有用<br /><br />"
 "注意：<br />脚本的第一行必须是没有引号的&#34;#!/bin/sh&#34;，以#开头的行是注释"
 "不会执行<br /><br />可用变量：<br />"
-"$ACTION 是热插拔事件（接入，断开）<br />"
+"$ACTION 是热插拔事件（启用，禁用）<br />"
 "$INTERFACE 是接口名称（wan1，wan2等）<br />"
 "$DEVICE 是附加到接口的设备名称（eth0.1，eth1等）"
 
@@ -47,6 +47,9 @@ msgstr "此部分将允许您修改 /etc/config/mwan3 的内容"
 
 msgid "This section allows you to modify the contents of /etc/config/network"
 msgstr "此部分将允许您修改 /etc/config/network 的内容"
+
+msgid "This section allows you to modify the contents of /etc/config/wireless"
+msgstr "此部分将允许您修改 /etc/config/wireless 的内容"
 
 msgid "MWAN Interface Configuration"
 msgstr "MWAN接口配置"
@@ -307,13 +310,16 @@ msgid "Advanced"
 msgstr "高级"
 
 msgid "Hotplug Script"
-msgstr "热插拔脚本"
+msgstr "Hotplug脚本"
 
 msgid "MWAN Config"
 msgstr "MWAN配置"
 
 msgid "Network Config"
 msgstr "网络配置"
+
+msgid "Wireless Config"
+msgstr "无线配置"
 
 msgid "Troubleshooting"
 msgstr "故障排除"
@@ -337,10 +343,10 @@ msgid "Check routing table"
 msgstr "检查路由表"
 
 msgid "Hotplug ifup"
-msgstr "热插拔接入"
+msgstr "Hotplug启用"
 
 msgid "Hotplug ifdown"
-msgstr "热插拔断开"
+msgstr "Hotplug禁用"
 
 msgid "MWAN Service Control"
 msgstr "MWAN服务控制"
