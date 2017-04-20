@@ -26,7 +26,7 @@ popd
 make menuconfig
 
 # 开始编译
-make package/mwan3-zh-cn/compile V=99
+make package/luci-i18n-mwan3/compile V=99
 ```
 
 [openwrt-sdk]: https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
